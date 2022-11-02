@@ -1,0 +1,19 @@
+﻿/// <reference path="../js/vendor/jquery.js" />
+
+Define("dialog", {
+    display: function (msg, title, options) {
+        dialog.show(title, msg, options);
+    },
+
+    show: function (title, content, options) {
+        var initialOptions = {
+            title: title,
+            buttons:
+                [{
+                    text: "OK", click: function () { $(this).dialog("close"); }
+                }],
+            modal: true
+        };
+        $('#dialog').html(content).dialog($.extend(true, initialOptions, options));
+    }
+})

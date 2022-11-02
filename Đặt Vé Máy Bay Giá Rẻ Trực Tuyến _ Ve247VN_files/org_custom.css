@@ -1,0 +1,275 @@
+﻿body { min-width: 980px; }
+h1, h2, h3, h4, h5, h6 { font-family: Helvetica, Arial, sans-serif; }
+body.home { }
+
+.tip { display:none; visibility:hidden; }
+
+/* Header
+------------------------------------------------------------------------------------*/
+header { clear:both; width:100%; height:80px;}
+header .container { position:relative; }
+#logo { margin: 0; float: left; }
+#logo a { display:block; width:250px; height:80px; /*background:url(../images/logo.png) no-repeat top left;*/ }
+#slogan {}
+
+/* Social Icons */
+#social .act { position: absolute; top: 0; left: 0; opacity: 0; }
+#social a:hover .act { opacity: 1;}
+#social { float: right; padding-top: 14px;}
+#social ul { margin: 0;}
+#social li { display: inline-block; vertical-align: middle; line-height: 34px; height: 34px; margin-left: 3px;}
+
+#social a { position: relative; display: inline-block; width:23px; height:23px;}
+#social a.ico-fb { background: url(../images/icon-fb.png) 0 0 no-repeat; }
+#social a.ico-tw { background: url(../images/icon-tw.png) 0 0 no-repeat; }
+#social a.ico-gl { background: url(../images/icon-go.png) 0 0 no-repeat; }
+
+/* Top Nav */
+#userNav { float: right; padding-top: 14px;}
+#userNav { margin-right: 5px; }
+#userNav a { padding: 0 7px 0 4px; color: #373435;}
+#userNav ul { margin: 0;}
+#userNav li { display: inline-block; vertical-align: middle; line-height: 34px; height: 34px;}
+#userNav li:last-child a { background: none; }
+
+/* Login Dialog */
+#logon-dlg { padding:20px 20px; }
+#logon-dlg p { padding:0; margin:0; line-height:normal; }
+#logon-dlg p label { font-size:12px; font-weight:normal; display:block; margin-bottom:3px; }
+#logon-dlg .logon-msg { color:red; display:block; font-size:11px; margin:0; padding:0; margin-bottom:5px; }
+#logon-dlg #btnLogOn { padding:5px 10px; }
+
+/* Hot line */
+#hotLine { }
+#hotLine strong { }
+#hotLine span { }
+
+/* Language Options */
+#language { width: 100px; position: absolute; right: 0; top: 50px; padding:1px;}
+
+
+/*================================== Top Horizon Menu ===================================*/
+
+.top-nav {/*background-color:#e6e6e6;*/ margin-bottom:10px; }
+.top-nav ul { margin:0; padding:0; list-style:none; }
+.top-nav ul li { float:left; /*display:inline;*/ }
+.top-nav ul li.active { /*background:#333; color:#fff;*/}
+.top-nav ul li a, .top-nav ul li a:link, .top-nav ul li a:visited { text-decoration:none; font-weight:bold; font-size:12px; color:#333; /*padding:10px 20px;*/ display:block; }
+.top-nav ul li a:hover, .top-nav ul li a:active { /*background:#333; color:#fff;*/}
+.top-nav ul li.active a { /*color:#fff;*/}
+
+
+
+/*================================== Banner SlideShow ===================================*/
+
+.banner { float:left; width:570px; height:300px; overflow: hidden; position:relative;}
+.bannerinner{}
+
+/* The Nivo Slider styles */
+.nivoSlider { position: relative; overflow: hidden; }
+.nivoSlider img { position: absolute; top: 0px; left: 0px; max-width: none; }
+.nivo-main-image { display: block !important; position: relative !important; width: 100% !important; }
+
+/* If an image is wrapped in a link */
+.nivoSlider a.nivo-imageLink {
+    position: absolute;
+    top: 0px; left: 0px; width: 100%; height: 100%; border: 0; padding: 0; margin: 0;
+    z-index: 6; display: none; background: white; filter: alpha(opacity=0); opacity: 0;
+}
+/* The slices and boxes in the Slider */
+.nivo-slice { display: block; position: absolute; z-index: 5; height: 100%; top: 0; }
+.nivo-box { display: block; position: absolute; z-index: 5; overflow: hidden; }
+.nivo-box img { display: block; }
+
+/* Caption styles */
+.nivo-caption {
+    position: absolute; left: 0px; bottom: 0px; background: #000; color: #fff; width: 100%; z-index: 8;
+    padding: 5px 10px; opacity: 0.8; overflow: hidden; display: none; -moz-opacity: 0.8; filter: alpha(opacity=8);
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+.nivo-caption p { padding: 5px; margin: 0; }
+.nivo-caption a { display: inline !important; }
+.nivo-html-caption { display: none; }
+/* Direction nav styles (e.g. Next & Prev) */
+.nivo-directionNav a { position: absolute; top: 45%; z-index: 9; cursor: pointer;}
+.nivo-prevNav { left: 0px; }
+.nivo-nextNav { right: 0px; }
+/* Control nav styles (e.g. 1,2,3...) */
+.nivo-controlNav { text-align: right; padding: 0; position: absolute; bottom: 20px; right: 20px; z-index: 50;}
+.nivo-controlNav a { cursor: pointer; display: inline-block; padding: 2px 7px; background: #fff; margin-left: 1px; color:#333; font-weight: bold; opacity:.95; -webkit-border-radius: 2px; border-radius: 2px; }
+.nivo-controlNav a.active { background-color: #000; color: #FFF;}
+
+
+
+/*================================== Customer Support Chat/Yahoo ===================================*/
+
+/*#support-customer { width:300px; float: right; }
+#support-customer .support-cnt { border:solid 1px #ccc; border-top:0; background-color:#fff; padding:10px; }
+#support-customer .title, .agent-deals .title { background:#333; color:#fff; font-size:16px; padding:5px 10px;}
+#support-customer hr { border:solid 1px #eee; border-bottom:0; border-left:0; border-right:0; margin:0; padding:0; margin-bottom:4px; }
+#support-customer p, #support-customer h4 { padding-left:20px; }
+#support-customer h4 { background-color:#f0f0f0; }
+#support-customer .item { margin:0; padding:5px 20px; padding-bottom:10px; }
+#support-customer .item .user-thumb { float:left; margin-right:10px; margin-bottom:4px; }
+#support-customer .item .user-name { font-size:12px; }
+#support-customer .item .user-mobile { font-style:italic; color:#666; }*/
+
+
+/*================================== Quick search box ===================================*/
+
+#quick-search-dialog { width:300px; float: right; margin-right: 10px;margin-bottom: 10px; }
+#quick-search-dialog .inout .location-list { width: 180px; background: #fff url(../images/icon-dd.png) 170px center no-repeat; }
+#quick-search-dialog .title {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #f5811e;
+    color: #fff;
+    line-height: 25px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    background: -moz-linear-gradient(top, #f5811e 0, #e8710b 100%) no-repeat;
+    background: linear-gradient(top, #f5811e 0, #e8710b 100%) no-repeat;
+    background: -webkit-linear-gradient(top, #f5811e 0, #e8710b 100%) no-repeat;
+    background: -o-linear-gradient(top, #f5811e 0, #e8710b 100%) no-repeat;
+    background: -ms-linear-gradient(top, #f5811e 0, #e8710b 100%) no-repeat;
+    -svg-background: linear-gradient(top, #f5811e 0, #e8710b 100%) no-repeat;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#f5811e, endColorstr=#e8710b)";
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-topright: 3px;
+}
+
+/*================================== Sponsor Logos Carousel ===================================*/
+
+.sponsor { padding:10px 0px; padding-bottom:20px; overflow: hidden; }
+.sponsor-holder { width: 20000em; }
+.sponsor img { float: left; display: block; width: 949px; height: 75px; }
+
+
+/*================================= 3 blocks - Homepage ====================================*/
+
+#info { }
+
+.tblock { float:left; display:inline-block; width:33%; padding:20px 0px; }
+.tblock .title { margin:0; padding:0; font-size:20px; margin-bottom:7px; color:#333; }
+.tblock .title span {  }
+.tblock ul { margin:0; padding:0; padding-left:20px; }
+
+/*----------------------------- block why -------------------------------*/
+#why {}
+
+/*----------------------------- block about us -------------------------------*/
+#about-us { }
+
+/*----------------------------- block latest news -------------------------------*/
+#latest-news { }
+#latest-news a { display:inline-block; text-decoration:none; margin-bottom:10px;}
+#latest-news a:hover, #latest-news a:active { text-decoration:underline; }
+#latest-news img { float:left; margin-right:10px; margin-bottom:10px; }
+#latest-news ul li p { float:left; }
+#latest-news .more { background: #cccccc; display: inline-block; padding: 2px 7px; margin-top:5px; color:#333; text-decoration:none;}
+#latest-news .more:hover, #latest-news .more:active {}
+
+/*================================== Footer ===================================*/
+
+footer {}
+footer a { color: #333; }
+
+/* Footer Cols */
+.footer-col { width: 25%; float: left;}
+.footer-col ul { margin:0; padding:0; list-style:none; }
+.footer-col li { list-style: none; padding-left: 8px; }
+.footer-col ul li a { text-decoration:none; }
+.footer-col ul li a:hover { text-decoration:underline; }
+.footer-col h2 { font-size: 13px; padding: 15px 0 5px; border-bottom: 1px solid #ccc; margin-right: 20px; }
+.footer-col h2 span { }
+
+footer .col4 div { margin-bottom: 10px; padding-left: 25px; }
+footer .col4 strong { }
+.footer-col .address { margin-top: 20px; background: url(../images/address.png) 1px 1px no-repeat; }
+.footer-col .phone { background: url(../images/phone.png) 1px 1px no-repeat; }
+.footer-col .email { background: url(../images/email.png) 1px 3px no-repeat; }
+
+/* Footer Copyright */
+footer .copy { float: left;  }
+footer .copy a { }
+.bottom { margin-bottom:15px; }
+.copyright { font-weight: bold; }
+
+/* Footer Counter */
+footer .views { float:left; }
+footer .views strong { display: inline-block; margin-left: 10px; }
+
+.footnav { }
+.footnav li { line-height: 36px; display: inline-block; padding: 0 20px; }
+.footnav li:first-child { background: none; padding-left: 0; }
+
+/* Footer Phone */
+.phonenumber { float:right; font-weight:bold;}
+.phonenumber span { }
+
+/* Back Top Button */
+#backtotop { position: fixed; bottom:30px; right: 20px; width: 40px; height: 40px; text-indent: -9999em; background: url(../images/totop.png) 0 0 no-repeat; }
+
+.bookingpreview-agreement-statement{display: none}
+
+/*#############################################################################################
+###############################################################################################
+###############################################################################################
+#############################################################################################*/
+
+aside { float:right; width:250px;}
+
+
+.select-bank {
+    display: inline-block;
+    margin: 15px;
+}
+
+.select-bank input {
+    position: absolute;    
+    margin-top: 12px;
+}
+
+.select-bank img {
+    padding-left: 20px;
+}
+
+
+/*==================================== Error page ============================ */
+.error-page-message h2 { text-align: center;color: red; font-weight: normal}
+/*#############################################################################################
+###############################################################################################
+###############################################################################################
+#############################################################################################*/
+
+
+
+/*==================================== CategoryArticle & Article ============================ */
+#view-category-title { display: none;}
+/*#############################################################################################
+###############################################################################################
+###############################################################################################
+#############################################################################################*/
+
+#mcustomer-info ul.customers li input[name="passengerName"] {
+    text-transform: uppercase !important;
+    width :100%;
+}
+
+#mcontact-info input[name="customerName"] {
+    text-transform: uppercase !important;
+}
+
+#mcustomer-info ul.customers li input[name="passengerFirstName[]"] {
+    text-transform: uppercase !important;
+}
+#mcustomer-info ul.customers li input[name="passengerMiddleAndLastname[]"] {
+    text-transform: uppercase !important;
+}

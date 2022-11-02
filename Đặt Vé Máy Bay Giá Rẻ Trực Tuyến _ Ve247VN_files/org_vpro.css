@@ -1,0 +1,310 @@
+﻿/* Custom Checkbox and Radio Inputs */
+form.custom .custom {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    position: relative;
+    top: 2px;
+    border: solid 1px #696969;
+    background: white;
+}
+
+form.custom .custom.radio {
+    -webkit-border-radius: 1000px;
+    border-radius: 1000px;
+}
+
+form.custom .custom.checkbox:before {
+    content: "";
+    display: block;
+    line-height: 0.8;
+    height: 14px;
+    width: 14px;
+    text-align: center;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    font-size: 14px;
+    color: #fff;
+}
+
+form.custom .custom.radio.checked:before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    -webkit-border-radius: 1000px;
+    border-radius: 1000px;
+    background: #222222;
+    position: relative;
+    top: 3px;
+    left: 3px;
+}
+
+form.custom .custom.checkbox.checked:before {
+    content: "\00d7";
+    color: #222222;
+}
+
+
+
+
+/* Custom Select Options and Dropdowns */
+form.custom {
+    /* Custom input, disabled */
+}
+
+form.custom .custom.dropdown {
+    display: block;
+    position: relative;
+    top: 0;
+    height: 2em;
+    margin-bottom: 0.25em;
+    margin-top: 0px;
+    padding: 0px;
+    width: 100%;
+    background: white;
+    background: -moz-linear-gradient(top, white 0%, #f3f3f3 100%);
+    background: -webkit-linear-gradient(top, white 0%, #f3f3f3 100%);
+    background: linear-gradient(to bottom, white 0%, #f3f3f3 100%);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    font-size: 0.875em;
+    vertical-align: top;
+}
+
+form.custom .custom.dropdown ul {
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+form.custom .custom.dropdown .current {
+    cursor: default;
+    white-space: nowrap;
+    line-height: 2.25em;
+    color: rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+    margin-left: 0.5em;
+    margin-right: 2.3125em;
+}
+
+form.custom .custom.dropdown .selector {
+    cursor: default;
+    position: absolute;
+    width: 2.5em;
+    height: 2.3125em;
+    display: block;
+    right: 0;
+    top: 0;
+}
+
+form.custom .custom.dropdown .selector:after {
+    content: "";
+    display: block;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: solid 5px;
+    border-color: #aaaaaa transparent transparent transparent;
+    position: absolute;
+    left: 0.9375em;
+    top: 50%;
+    margin-top: -3px;
+}
+
+form.custom .custom.dropdown:hover a.selector:after, form.custom .custom.dropdown.open a.selector:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: solid 5px;
+    border-color: #222222 transparent transparent transparent;
+}
+
+form.custom .custom.dropdown .disabled {
+    color: #888888;
+}
+
+form.custom .custom.dropdown .disabled:hover {
+    background: transparent;
+    color: #888888;
+}
+
+form.custom .custom.dropdown .disabled:hover:after {
+    display: none;
+}
+
+form.custom .custom.dropdown.open ul {
+    display: block;
+    z-index: 10;
+    min-width: 100%;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+form.custom .custom.dropdown.small {
+    max-width: 134px;
+}
+
+form.custom .custom.dropdown.medium {
+    max-width: 254px;
+}
+
+form.custom .custom.dropdown.large {
+    max-width: 434px;
+}
+
+form.custom .custom.dropdown.expand {
+    width: 100% !important;
+}
+
+form.custom .custom.dropdown.open.small ul {
+    min-width: 56px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+form.custom .custom.dropdown.open.medium ul {
+    min-width: 213px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+form.custom .custom.dropdown.open.large ul {
+    min-width: 434px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+form.custom .custom.dropdown ul {
+    position: absolute;
+    width: auto;
+    display: none;
+    margin: 0;
+    left: -1px;
+    top: auto;
+    -webkit-box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0;
+    background: white;
+    border: solid 1px #696969;
+    font-size: 16px;
+}
+
+form.custom .custom.dropdown ul li {
+    color: #555555;
+    font-size: 11px;
+    cursor: default;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    padding-left: 0.375em;
+    padding-right: 2.375em;
+    min-height: 1.5em;
+    line-height: 1.5em;
+    margin: 0;
+    white-space: nowrap;
+    list-style: none;
+}
+
+form.custom .custom.dropdown ul li.selected {
+    background: #eeeeee;
+    color: black;
+}
+
+form.custom .custom.dropdown ul li:hover {
+    background-color: #e4e4e4;
+    color: black;
+}
+
+form.custom .custom.dropdown ul li.selected:hover {
+    background: #eeeeee;
+    cursor: default;
+    color: black;
+}
+
+form.custom .custom.dropdown ul.show {
+    display: block;
+}
+
+form.custom .custom.disabled {
+    background-color: #dddddd;
+}
+
+
+/* We use this to get basic styling on all basic form elements */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+        background-color: white; text-indent:5px;
+        font-family: inherit;
+        border: 1px solid #cccccc;
+        -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+        color: rgba(0, 0, 0, 0.75);
+    /*display: block;
+    margin: 0 0 1em 0;
+    padding: 0.5em;
+    height: 2.3125em;
+    width: 100%;*/
+    /*-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;*/
+    -webkit-transition: all 0.15s linear;
+    -moz-transition: all 0.15s linear;
+    transition: all 0.15s linear;
+}
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="date"]:focus,
+    input[type="datetime"]:focus,
+    input[type="datetime-local"]:focus,
+    input[type="month"]:focus,
+    input[type="week"]:focus,
+    input[type="email"]:focus,
+    input[type="number"]:focus,
+    input[type="search"]:focus,
+    input[type="tel"]:focus,
+    input[type="time"]:focus,
+    input[type="url"]:focus,
+    textarea:focus {
+        background: #fafafa;
+        border-color: #999999;
+        outline: none;
+    }
+
+    input[type="text"][disabled],
+    input[type="password"][disabled],
+    input[type="date"][disabled],
+    input[type="datetime"][disabled],
+    input[type="datetime-local"][disabled],
+    input[type="month"][disabled],
+    input[type="week"][disabled],
+    input[type="email"][disabled],
+    input[type="number"][disabled],
+    input[type="search"][disabled],
+    input[type="tel"][disabled],
+    input[type="time"][disabled],
+    input[type="url"][disabled],
+    textarea[disabled] {
+        /*background-color: #dddddd;*/
+    }

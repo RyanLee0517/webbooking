@@ -1,0 +1,1503 @@
+﻿/*
+Theme Name: Responsive Olimpia Fitness Center 
+Description: This is created by.
+Version: 1.0.0
+Author: Duc Bui
+Author URI: 
+
+CSS STRUCTURE:
+
+1. SITE STRUCTURE
+2. PAGES AND CONTENT
+3. MISC
+4. MEDIA QUERIES
+
+/*============================================================================================*/
+/* 1. SITE STRUCTURE */
+/*============================================================================================*/
+
+
+/*@font-face {
+  font-family: "Myriad Pro"; src: url("MYRIADPRO-SEMIBOLD2.OTF");  
+}
+
+@font-face {
+font-family: 'Title Font';
+src: url('../_fonts/Little-Trouble-Girl/littletroublegirl-webfont.eot');
+src: local('☺'), url('../_fonts/Little-Trouble-Girl/littletroublegirl-webfont.woff') format('woff'),
+    url('../_fonts/Little-Trouble-Girl/littletroublegirl-webfont.ttf') format('truetype'),
+    url('../_fonts/Little-Trouble-Girl/littletroublegirl-webfont.svg#webfont') format('svg');
+font-weight: normal;
+font-style: normal;
+font-variant: normal; }*/
+
+/* HTML Selectors
+------------------------------------------------------------------------------------*/
+
+body table tr td {
+    font: 12px Arial, Helvetica, sans-serif;
+    vertical-align: top
+}
+
+* body, div, dl, dt, dd, ul, ol, li, h1, h2, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+p {
+    padding: 6px 0px;
+    margin: 0;
+    line-height: normal;
+}
+
+a:link, a:visited, a:hover, a:active {
+    cursor: pointer;
+}
+
+body {
+    background: #fbfbfb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Arial, Verdana;
+    font-size: 12px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.container {
+    width: 960px;
+    clear: both;
+    margin: 0px auto;
+}
+
+.cf:before, .cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    *zoom: 1;
+}
+
+/* ---------------------------- HOME SEARCH --------------------------------  */
+
+#homePageSearch {
+    width: 380px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    margin-right: 10px;
+}
+
+.searchnav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .searchnav li {
+        float: left;
+        display: inline;
+    }
+
+    .searchnav a {
+        display: block;
+        font-size: 12px;
+        word-spacing: normal;
+        padding: 10px 15px;
+        background: #666;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+    }
+
+        .searchnav a:hover {
+            background: #333;
+        }
+
+    .searchnav .active a {
+        color: #fff;
+        background: #111;
+    }
+
+    .searchnav li:first-child a, .searchnav li:last-child a {
+    }
+
+.datve {
+}
+
+.dulich a {
+}
+
+.khachsan a {
+}
+
+.chothuexe a {
+}
+
+.homesearchform {
+    clear: both;
+    padding: 10px 10px 5px 20px;
+    border: none;
+    position: relative;
+    height: 250px;
+    background: #ccc;
+}
+
+    .homesearchform label {
+    }
+
+    .homesearchform legend {
+    }
+
+    .homesearchform fieldset {
+        margin: 0;
+        padding: 0;
+    }
+
+    .homesearchform input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"] {
+    }
+
+/* Ticket Type: One way or Two ways */
+.tickettype {
+    margin: 5px 0;
+    margin-bottom: 10px;
+}
+
+    .tickettype label {
+        width: 30%;
+        display: inline-block;
+    }
+
+        .tickettype label:last-child {
+            width: 35%;
+        }
+
+    .tickettype input {
+        margin-right: 5px;
+        vertical-align: text-bottom;
+    }
+
+/* Source, destination */
+.inout {
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+    .inout .location-lbl {
+        display: none;
+        visibility: hidden;
+    }
+
+    .inout .location-list {
+        border: solid 1px #ccc;
+        padding: 3px 5px;
+        width: 200px;
+        background: #fff url(../images/icon-dd.png) 193px center no-repeat;
+    }
+
+#fsd-source {
+}
+
+#fsd-arrival {
+}
+
+form.homesearchform ::-webkit-input-placeholder {
+}
+
+form.homesearchform .custom.radio {
+    margin-right: 5px;
+}
+
+form.homesearchform .custom.dropdown.medium {
+    max-width: 213px;
+    float: left;
+    margin-right: 10px;
+}
+
+form.homesearchform .custom.dropdown.small {
+    max-width: 56px;
+    margin-top: 5px;
+}
+
+.inout .time-lbl {
+    display: none;
+    visibility: hidden;
+}
+
+.inout .time {
+    border: solid 1px #ccc;
+    padding: 3px 5px;
+    width: 103px;
+    background: #fff url(../images/icon-date.png) 95px center no-repeat;
+}
+
+.inout .time-icon {
+}
+
+#fsd-departure-date, #fsd-return-date {
+    position: absolute;
+    right: 20px;
+    top: 44px;
+}
+
+#fsd-departure-date {
+}
+
+#fsd-return-date {
+    top: 72px;
+}
+
+/* Passenger: Adult, kid, infant*/
+.homesearchform .checkbox {
+    margin-right: 10px;
+}
+
+.homesearchform .passenger {
+    text-align: right;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+    .homesearchform .passenger label {
+        margin: 0;
+        padding: 0;
+        width: 77px;
+        text-align: left;
+        float: left;
+    }
+
+        .homesearchform .passenger label span {
+            font-size: 11px;
+            font-style: italic;
+        }
+
+        .homesearchform .passenger label a {
+            text-decoration: none;
+        }
+
+/* Submit button */
+.homesearchform #submit-search {
+    padding-top: 10px;
+}
+
+.homesearchform .button {
+    padding: 10px;
+    font-weight: bold;
+}
+
+.homesearchform .submit {
+}
+
+.homesearchform .mooncalendar {
+    font-weight: bold;
+    color: #333;
+    font-size: 12px;
+    margin-top: 0px;
+    position: absolute;
+    right: 20px;
+    top: 135px;
+}
+
+.homesearchform .booking-guide {
+    display: none;
+    visibility: hidden;
+}
+
+/* Other custom misc */
+.homesearchform #search-misc {
+    display: none;
+    visibility: hidden;
+}
+
+.homesearchform .record-search-link {
+    padding: 0;
+    margin: 0;
+    margin-top: 3px;
+    margin-right: 140px;
+}
+
+#search-brecord-dlg {
+    padding: 20px 20px;
+}
+
+    #search-brecord-dlg p {
+        padding: 0;
+        margin: 0;
+        line-height: normal;
+    }
+
+        #search-brecord-dlg p label {
+            font-size: 12px;
+            font-weight: normal;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+    #search-brecord-dlg #BookingRecordCode {
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    #search-brecord-dlg #criteriaSearch {
+        display: block;
+        padding: 5px;
+        width: 95%;
+        margin-bottom: 5px;
+    }
+
+    #search-brecord-dlg .search-msg {
+        color: red;
+        display: block;
+        font-size: 11px;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5px;
+    }
+
+    #search-brecord-dlg #btnSearchBRecord {
+        padding: 5px 10px;
+    }
+
+
+/* Custom Select City Dialog */
+
+.domestic-city, .international-city {
+    float: left;
+    font-size: 12px;
+    padding-right: 15px;
+    padding-left: 10px;
+}
+
+.domestic-city {
+    width: 120px;
+    border-right: solid 1px #ddd;
+    padding-left: 10px;
+}
+
+    .domestic-city ul, .international-city ul {
+        clear: both;
+        float: left;
+        margin: 0;
+        padding: 0;
+        list-style: none outside none;
+    }
+
+        .domestic-city ul li, .international-city ul li {
+            margin: 0;
+            padding: 0;
+        }
+
+            .domestic-city ul li.title, .international-city ul li.title {
+                font-size: 14px;
+                font-weight: bold;
+                padding: 10px 5px;
+                padding-bottom: 5px;
+            }
+
+            .domestic-city ul li a, .domestic-city ul li a:link, .domestic-city ul li a:visited {
+                font-size: 12px;
+                color: #666;
+                display: block;
+                padding: 3px 5px;
+                width: 100px;
+                text-decoration: none;
+            }
+
+                .domestic-city ul li a:hover, .domestic-city ul li a:active {
+                    background-color: #999;
+                    color: #fff;
+                }
+
+        .international-city ul li {
+            padding-left: 5px;
+        }
+
+            .international-city ul li.title {
+            }
+
+            .international-city ul li.suggest {
+                font-size: 11px;
+                padding-bottom: 7px;
+                display: block;
+            }
+
+            .international-city ul li #inter-city-departure {
+                width: 160px;
+            }
+
+            .international-city ul li #btnChooseLocation {
+                padding: 5px 15px;
+                font-weight: bold;
+                margin-top: 5px;
+                margin-left: -1px;
+            }
+
+                .international-city ul li #btnChooseLocation:hover {
+                }
+
+.ui-widget {
+    border-color: #999;
+    padding: 0;
+    padding-bottom: 0px;
+    border-radius: 0 !important;
+    box-shadow: 1px 1px 15px rgba(0,0,0,.3);
+    z-index: 1000;
+}
+
+.ui-widget-header {
+    background: #f6f5f5;
+    border-radius: 0;
+    border: 0;
+    border-bottom: solid 1px #d9d8d8;
+    font-size: 14px;
+    color: #333;
+}
+
+.ui-dialog-buttonpane {
+    border-top-color: #eee;
+}
+
+    .ui-dialog-buttonpane botton {
+        height: 10px;
+    }
+
+    .ui-dialog-buttonpane .ui-button {
+        height: 30px;
+    }
+
+.ui-dialog-titlebar-close {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
+.news-recent {
+    padding-left: 50px;
+}
+
+    .news-recent li a {
+        font-weight: bold;
+    }
+
+    .news-recent li .news-datetime, .news-detail .news-datetime {
+        font-size: 10px;
+        color: #999;
+        font-style: italic;
+    }
+
+.news-detail .news-title {
+    margin: 0;
+    padding: 0;
+}
+
+.admin-seo-name {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+/*================================= Homepage Deals ====================================*/
+.homepagedeal {
+    padding-top: 10px;
+}
+
+.agent-deals {
+    padding: 0px 0px;
+    line-height: 22px;
+    float: left;
+    width: 650px;
+    min-height: 300px;
+}
+
+    .agent-deals .title {
+    }
+
+    .agent-deals img.flight-logos {
+        float: left;
+        border: 1px solid #ccc;
+        margin: 3px 10px 5px 0;
+    }
+
+    .agent-deals .item {
+        padding: 5px 10px;
+        border: solid 1px #ddd;
+        margin-bottom: 1px;
+        background-color: #fff;
+        line-height: 18px;
+    }
+
+        .agent-deals .item:hover {
+        }
+
+        .agent-deals .item .content h1 {
+            margin: 0;
+            padding: 0;
+            line-height: normal;
+            font-size: 18px;
+        }
+
+        .agent-deals .item .content .ticket-way {
+            font-size: 11px;
+            font-style: italic;
+            color: #999;
+        }
+
+        .agent-deals .item .content .price {
+            display: inline-block;
+            padding-left: 30px;
+            padding-right: 10px;
+            font-weight: bold;
+        }
+
+            .agent-deals .item .content .price strong {
+            }
+
+    .agent-deals .more {
+        display: inline-block;
+        padding-left: 30px;
+        margin-left: 20px;
+        color: #333;
+        text-decoration: none;
+        float2: right;
+        font-style: italic;
+        font-size: 11px;
+        margin-right: 10px;
+    }
+
+        .agent-deals .more:after {
+            content: '\00BB ';
+            padding-left: 3px;
+        }
+
+        .agent-deals .more:hover {
+            color: #fc7400;
+        }
+
+
+/*#############################################################################################
+###############################################################################################
+###############################################################################################
+#############################################################################################*/
+
+
+/*================================= Wizard step ====================================*/
+
+#wizard-process {
+}
+
+.wizard {
+    background-color: #e6e6e6;
+    margin: 0px auto;
+    padding: 0;
+    list-style: none;
+}
+
+    .wizard li {
+        display: inline-block;
+        line-height: 58px;
+        height: 58px;
+        padding-left: 45px;
+        position: relative;
+    }
+
+        .wizard li:first-child {
+        }
+
+    .wizard a {
+        font-weight: 700;
+        color: #777;
+        text-decoration: none;
+    }
+
+    .wizard .num {
+        position: absolute;
+        left: -12px;
+        top: 50%;
+        margin-top: -29px;
+        height: 58px;
+        width: 58px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 13px;
+    }
+
+    .wizard .active {
+        padding-left: 70px;
+    }
+
+        .wizard .active .num {
+            font-size: 20px;
+            left: 0;
+        }
+
+        .wizard .active a, .wizard a:hover, .wizard a:active {
+            color: #333;
+            font-weight: 700;
+        }
+
+            .wizard .active a .icon, .wizard a:hover .icon, .wizard a:active .icon {
+                opacity: 1;
+            }
+
+    .wizard a .icon {
+        display: inline-block;
+        width: 64px;
+        height: 21px;
+        vertical-align: middle;
+        opacity: 0;
+    }
+
+    .wizard li:last-child a {
+        background2: none;
+    }
+
+
+/*============================================================================================*/
+/* 2. WIZARD 2: SELECT FLIGHT */
+/*============================================================================================*/
+
+#searchLoading {
+}
+
+#search-waiting {
+}
+
+.main {
+    width: 691px;
+    float: left;
+}
+
+.currentsearch {
+}
+
+    .currentsearch h2 {
+        font-size: 16px;
+    }
+
+    .currentsearch h3 {
+        font-size: 20px;
+    }
+
+        .currentsearch h3 span {
+            font-size: 12px;
+        }
+
+    .currentsearch ul {
+        float: left;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        margin-bottom: 5px;
+    }
+
+    .currentsearch li {
+        float: left;
+    }
+
+        .currentsearch li strong {
+        }
+
+        .currentsearch li span {
+            font-weight: bold;
+        }
+
+/* scroll down Next button*/
+.scrollDown {
+    background: url(../images/paperRoll.png) no-repeat top left;
+    height: 50px;
+    padding: 15px 10px 15px 70px;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    width: 611px !important;
+    margin-top: 0 !important;
+    z-index: 10;
+}
+
+    .scrollDown .moreScroll {
+        background: url(../images/arrowdownScroll.png) no-repeat left center;
+        display: block;
+        padding-left: 20px;
+        float: left;
+        margin-top: 15px;
+        font-size: 18px;
+    }
+
+/* Cheap Ticket */
+.cheap, .single {
+    background: #eee;
+}
+
+.single {
+    background: #eee;
+}
+
+    .cheap h3, .single h3 {
+        padding-top: 10px;
+        font-size: 15px;
+        width: 90px;
+        text-align: center;
+        vertical-align: middle;
+        float: left;
+    }
+
+        .cheap h3 span, .single h3 span {
+            font-size: 12px;
+            display: block;
+            font-weight: normal;
+        }
+
+    .cheap .logo, .single .logo {
+        margin: 0 5px 0 25px;
+        float: left;
+        line-height: 70px;
+    }
+
+        .cheap .logo img, .single .logo img {
+            vertical-align: middle;
+        }
+
+    .cheap .time, .single .time {
+        line-height: 20px;
+        float: left;
+        width: 135px;
+        margin: 7px 0;
+        border-right: 1px solid #ccc;
+        padding: 7px 10px 8px 15px;
+    }
+
+    .cheap .flytime, .single .flytime {
+        font-weight: 700;
+        padding: 0 32px 0 13px;
+        display: inline-block;
+    }
+
+    .cheap .arvtime, .single .arvtime {
+        font-weight: 700;
+    }
+
+    .cheap .price, .single .price {
+        font-weight: 700;
+        padding: 15px 10px;
+        float: left;
+        line-height: 20px;
+    }
+
+        .cheap .price strong, .single .price strong {
+            font-size: 18px;
+            display: block;
+        }
+
+    .cheap .book, .single .book {
+        float: left;
+        line-height: 33px;
+        margin: 18px 0 0 53px;
+        padding-left: 17px;
+    }
+
+        .cheap .book span, .single .book span {
+            display: inline-block;
+            padding-right: 17px;
+            color: #FFF;
+            font-weight: bold;
+        }
+
+.flyicon {
+    margin-top: 22px;
+}
+
+.w110 {
+    width: 100px !important;
+}
+
+.float-left {
+    float: left !important;
+}
+
+.single .name {
+    font-size: 13px;
+    font-weight: normal;
+    width: 120px;
+    padding-top: 4px;
+}
+
+    .single .name strong {
+        display: block;
+    }
+
+.single .company {
+    margin-left: 20px;
+    float: left;
+    display: inline;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+    .single .company strong {
+        display: block;
+        font-size: 15px;
+        color: #f58634;
+        margin-top: 5px;
+    }
+
+.common-button {
+    float: right;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    border-radius: 3px;
+    border: solid 1px #999;
+    background: #eee;
+    display: block;
+}
+
+    .common-button span {
+    }
+
+/* Botton Booking the Cheap Ticket */
+#btnBestPriceBooking {
+    margin-top: 10px;
+}
+
+/* Title to - from*/
+.searchresults {
+}
+
+    .searchresults h2 {
+        font-size: 20px;
+    }
+
+        .searchresults h2 span {
+            font-size: 12px;
+        }
+
+        .searchresults h2.chooseticket {
+            display: none
+        }
+
+    /* Date picker */
+    .searchresults .dates {
+        background: #eee;
+        position: relative;
+        height: 67px;
+        padding: 0 33px;
+    }
+
+        .searchresults .dates ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .searchresults .dates li {
+            float: left;
+            list-style: none;
+            text-align: center;
+        }
+
+        .searchresults .dates a {
+            float: left;
+            width: 89px;
+            height: 60px;
+            padding-top: 7px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .searchresults .dates .active a, .searchresults .dates li a.searchable:hover { /*background:#666; color: #FFF;*/
+        }
+
+        .searchresults .dates strong {
+            display: block;
+        }
+
+        .searchresults .dates .price {
+            display: block;
+            line-height: 25px;
+            margin-top: 4px;
+            color: #f58634;
+            font-weight: bold;
+        }
+
+        .searchresults .dates .active .price, .searchresults .dates li a:hover .price {
+            color: #000;
+        }
+
+        .searchresults .dates .prev, .searchresults .dates .next {
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            top: 10px;
+        }
+
+        .searchresults .dates .prev {
+            left: 8px;
+            background: url(../images/prev.png) 0 0 no-repeat;
+        }
+
+        .searchresults .dates .next {
+            right: 8px;
+            background: url(../images/next.png) 0 0 no-repeat;
+        }
+
+    .searchresults h3 {
+        font-size: 18px;
+        float: left;
+    }
+
+        .searchresults h3 strong {
+            color: #f58634;
+        }
+
+    /* Filter Dropdown */
+    .searchresults .filters {
+        text-align: right;
+        margin: 10px 0;
+        margin-top: 6px;
+    }
+
+        .searchresults .filters select {
+            display: inline-block;
+            margin-top: 4px;
+            margin-left: 6px;
+            padding: 1px;
+        }
+
+    .searchresults .vendorfilter {
+        width: 175px;
+        margin-right: 8px;
+    }
+
+    .searchresults .timefilter {
+        width: 200px;
+    }
+
+    .searchresults .pricefilter {
+        width: 60px;
+    }
+
+    .searchresults .cdrop {
+        z-index: 3;
+        position: relative;
+    }
+
+    .searchresults .customdropdown {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 25px;
+        z-index: 1;
+        background: url(../images/dropdown.png) 0 0 no-repeat;
+        padding-left: 7px;
+    }
+
+        .searchresults .customdropdown span {
+            display: inline-block;
+            background: url(../images/dropdown.png) 100% 0 no-repeat;
+            height: 25px;
+            width: 100%;
+            text-align: left;
+            vertical-align: middle;
+            padding: 4px 0;
+        }
+
+        .searchresults .customdropdown.hover {
+            background: url(../images/dropdown.png) 0 100% no-repeat;
+        }
+
+            .searchresults .customdropdown.hover span {
+                background: url(../images/dropdown.png) 100% 100% no-repeat;
+            }
+
+    /* Table Result */
+    .searchresults table.searchresults-tbl {
+        width: 100%;
+        border: none;
+    }
+
+        .searchresults table.searchresults-tbl td {
+            border-bottom: 1px dashed #ccc;
+        }
+
+.searchresults-tbl td {
+    vertical-align: middle;
+}
+
+    .searchresults-tbl td.fly {
+    }
+
+    .searchresults-tbl td img {
+        vertical-align: middle;
+        max-width: 80px;
+    }
+
+.best-logo-int {
+    max-height: 30px;
+    max-width: 80px;
+}
+
+.searchresults-tbl th {
+    background: #333;
+    font-weight: bold;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 15px 10px 5px;
+    text-align: center !important;
+}
+
+table.searchresults-tbl td.col1 {
+}
+
+table.searchresults-tbl td.col2 {
+}
+
+table.searchresults-tbl td.col3 {
+}
+
+table.searchresults-tbl td.col4 {
+    width: 140px;
+    text-align: center;
+}
+
+table.searchresults-tbl td.col5 {
+    text-align: center;
+}
+
+table.searchresults-tbl td.col1-international {
+    text-align: left;
+    padding-left: 10px !important;
+}
+
+table.searchresults-tbl td.col3-international {
+    padding-right: 10px !important;
+}
+
+/* More button inside Table */
+.searchresults .more {
+    text-align: center;
+}
+
+    .searchresults .more a {
+        text-decoration: none;
+        color: #666;
+    }
+
+.searchresults td span { /*display: block;*/
+    width2: 140px;
+}
+
+.searchresults td label { /*width: 100px;*/
+    display: inline;
+}
+
+.searchresults td input {
+    vertical-align: text-bottom;
+    margin-right: 5px;
+}
+
+.searchresults-departureinfo {
+    padding-bottom: 10px
+}
+
+.searchresults-arrivalinfo {
+    padding-bottom: 10px
+}
+
+.ftable-extra {
+    display: none;
+    visibility: hidden;
+}
+
+/* Load more items */
+.moreinfo {
+    position: absolute;
+    width: 691px;
+    left: 0;
+    background: #FFF;
+    display: none;
+    text-align: left;
+    color: #333 !important;
+    z-index: 10;
+}
+
+    .moreinfo h3 {
+        float: none;
+        text-align: left;
+        margin-top: 0;
+        font-size: 12px;
+        line-height: 30px;
+        padding-left: 10px;
+    }
+
+    .moreinfo a.close {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333 !important;
+    }
+
+    .moreinfo p {
+        padding: 0 10px 20px;
+    }
+
+/* Next Step Button */
+a.nextbtn {
+}
+
+    a.nextbtn span {
+        display: block;
+    }
+
+#btnContinue {
+    margin-top: 10px;
+}
+
+#btnBackTo {
+    margin-top: 10px;
+}
+/* Table bill - info */
+table.bill-info tr {
+    background: #fff;
+}
+
+    table.bill-info tr td {
+        padding-top: 5px;
+        padding-bottom: 0px;
+    }
+
+        table.bill-info tr td.header strong {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+table.searchresults-tbl td:first-child {
+    padding-left: 10px;
+}
+
+table.searchresults-tbl.roundtrip .departure-flight {
+    display: block;
+}
+
+table.searchresults-tbl.roundtrip .return-flight {
+}
+
+/*============================================================================================*/
+/* 5. WIZARD 5: BOOKING CONFIRM */
+/*============================================================================================*/
+
+.confirm_info {
+    display: none;
+    visibility: hidden;
+}
+
+/*============================================================================================*/
+/* 2. ASIDE: TICKET SUMMARY */
+/*============================================================================================*/
+
+/* back to previous stage */
+.backbtn {
+    display: block;
+    height: 82px;
+    background: url(../images/backbtn.jpg);
+    margin-bottom: -10px;
+    width: 250px;
+}
+
+    .backbtn span {
+        display: block;
+        font-size: 13px;
+        color: #fff;
+        text-align: right;
+        text-transform: uppercase;
+        padding: 20px 20px 0 70px;
+        line-height: 23px;
+    }
+
+aside h2.title {
+    font-size: 15px;
+    line-height: 32px;
+    margin: 0;
+    padding-left: 20px;
+    background: url(../images/righttitle.png) 0 0 repeat-x;
+    color: #FFF;
+}
+
+aside .filters {
+    margin: 5px 10px;
+}
+
+aside h3 {
+    font-size: 12px;
+    margin: 10px 20px 10px 0;
+}
+
+    aside h3 span {
+        float: right;
+        font-weight: normal;
+    }
+
+aside .filter {
+    width: 100%;
+    background: url(../images/sliderbg.png) 50% 50% no-repeat;
+    width: 206px;
+    height: 51px;
+    border: none;
+    padding: 0 11px;
+}
+
+aside .slider, aside .ui-slider-range {
+    background: none;
+    border: none;
+}
+
+aside .filter .min {
+    float: left;
+}
+
+aside .filter .max {
+    float: right;
+}
+
+aside .filter .min,
+aside .filter .max {
+    margin: 4px 0;
+}
+
+aside .ui-slider .ui-slider-handle {
+    border: none;
+    background: transparent url(../images/sliderhandle.png) 50% 50% no-repeat;
+}
+
+aside .subtitle {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #FFF;
+    margin: 10px 0 0 -5px;
+    line-height: 33px;
+    background: url(../images/subtitle.png);
+    padding-left: 25px;
+}
+
+aside .totalholder {
+    background: #595959;
+    padding: 0 10px 10px;
+}
+
+aside .totalprice {
+    color: #fff;
+    padding: 15px 10px 10px;
+    line-height: 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+aside .holder {
+    color: #aaaaaa;
+}
+
+aside .text {
+    float: left;
+}
+
+aside .value {
+    float: right;
+}
+
+aside .totaltitle {
+    color: #fff;
+    margin: 0 0 5px;
+    text-transform: uppercase;
+    background: url(../images/totaltitle.png) 100% 50% no-repeat;
+    cursor: pointer;
+}
+
+    aside .totaltitle:hover {
+        color: #f58634;
+    }
+
+    aside .totaltitle.inactive {
+        background: url(../images/totaltitlein.png) 100% 50% no-repeat;
+    }
+
+aside .subtotal {
+    text-align: right;
+}
+
+    aside .subtotal strong {
+        display: inline-block;
+        font-size: 18px;
+        color: #ffdfa8;
+    }
+
+aside .total {
+    background: url(../images/totalbg.png) 0 0 no-repeat;
+    line-height: 46px;
+    text-align: center;
+    font-size: 22px;
+    color: #FFF;
+    font-weight: bold;
+}
+
+    aside .total strong {
+        display: block;
+        font-size: 25px;
+        color: #000;
+    }
+
+/*============================================================================================*/
+/* 3. MISC */
+/*============================================================================================*/
+
+/* Flight Policy PopUp - Flight List Detail Table */
+#flight-info #flight-info-route {
+    border-collapse: collapse;
+    border: solid 1px #ddd;
+    background: #f8f8f8;
+    width: 690px;
+    margin-top: 10px;
+}
+
+#flight-info .tbl-book-info {
+    border-color: #ddd;
+}
+
+    #flight-info .tbl-book-info .header {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    #flight-info .tbl-book-info .promo-color {
+        color: #FE5815;
+    }
+
+#flight-info fieldset {
+    border: solid 1px #ddd;
+    margin-bottom: 10px;
+}
+
+    #flight-info fieldset legend {
+        font-weight: bold;
+        padding: 5px 10px;
+        font-size: 12px;
+        color: #666;
+    }
+
+    #flight-info fieldset ul.additional {
+        font-size: 12px !important;
+    }
+
+        #flight-info fieldset ul.additional li {
+            line-height: 18px !important;
+            color: #666;
+        }
+
+            #flight-info fieldset ul.additional li strong {
+                font-weight: bold;
+                color: #333;
+            }
+
+
+/* System Message */
+
+.msg-error {
+    background: #fce8e8;
+    border: solid 1px #fdb2b2;
+    color: #dd4242;
+    padding: 10px 20px;
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.msg-warning {
+    background: #fefee6;
+    border: solid 1px #ffd800;
+    color: #ff9900;
+    padding: 10px 20px;
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.msg-info {
+    background: #eefafe;
+    border: solid 1px #9ed2f3;
+    color: #07a8fc;
+    padding: 10px 20px;
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.msg-success {
+    background: #daf0da;
+    border: solid 1px #6ce26c;
+    color: #006400;
+    padding: 10px 20px;
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+
+/*============================================================================================*/
+/* 4. MEDIA QUERIES */
+/*============================================================================================*/
+
+
+
+/*================================== QUICK SEARCH DIALOG ===================================*/
+
+#quick-search-dialog .passenger .passenger-note {
+    display: none;
+    visibility: hidden;
+}
+
+#quick-search-dialog #search-misc,
+#quick-search-dialog .booking-guide {
+    display: none;
+    visibility: hidden;
+}
+
+#loading-common {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
